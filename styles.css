@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #3c5a76;
+    padding: 10px;
+    color: white;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-icon {
+    color: white;
+  }
+  
+  .notification-badge {
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 50%;
+    padding: 0 5px;
+    font-size: 12px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-card, .feed-section, .sidebar {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    background-color: #5b9bd5;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .profile-details {
+    list-style: none;
+    margin: 15px 0;
+  }
+  
+  .profile-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .profile-details i {
+    margin-right: 10px;
+    width: 20px;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 10px;
+    background-color: #5b9bd5;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-link-light {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .interests {
+    margin-top: 20px;
+  }
+  
+  .interests span {
+    display: inline-block;
+    background-color: #eee;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  
+  .status-card {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .status-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .status-title {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .post-btn {
+    background-color: #5b9bd5;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .user-post {
+    margin-bottom: 20px;
+  }
+  
+  .post-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #5cb85c;
+    overflow: hidden;
+  }
+  
+  .author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .author-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-time {
+    font-size: 12px;
+    color: #999;
+    margin-left: auto;
+  }
+  
+  .post-content {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .post-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .post-image {
+    width: 48%;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .post-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .post-action {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .post-action i {
+    margin-right: 5px;
+  }
+  
+  .event-card {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+  }
+  
+  .event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .event-details {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .event-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .event-date {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .friend-request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+  
+  .friend-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    background-color: #f1a66d;
+  }
+  
+  .friend-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .friend-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .friend-actions {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .accept-btn {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .decline-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .chat-box {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .chat-title {
+    font-weight: bold;
+  }
+  
+  .minimize-btn {
+    cursor: pointer;
+  }
+  
+  .chat-message {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .chat-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #d9534f;
+    overflow: hidden;
+  }
+  
+  .chat-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .message-content {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    max-width: 80%;
+  }
+  
+  .interests-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .bug-report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
